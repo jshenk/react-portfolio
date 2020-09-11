@@ -9,15 +9,14 @@ import Menu from './compontants/Menu'
 import {
   Switch,
   Route,
-  Link,
   Redirect,
-  useRouteMatch,
-  useParams, BrowserRouter
+  BrowserRouter
 } from 'react-router-dom'
 
 
-function App(props) {
+function App() {
   const [toggle, setToggle] = useState(false)
+  const [menuText, setMenuText] = useState(false)
 
   return (
   <div className="App">
@@ -27,21 +26,22 @@ function App(props) {
         {toggle && <Menu /> }
         <button onClick={() => {
           setToggle(!toggle)
-        }} >Open Menu</button>
+          setMenuText(!menuText)
+        }} >{menuText ? 'Close Menu' : 'Open Menu'}</button>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/React-Portfolio" exact>
             <Home/>
           </Route>
-          <Route path="/work" exact>
+          <Route path="/React-Portfolio/work" exact>
             <MyWork/>
           </Route>
-          <Route path="/me" exact>
+          <Route path="/React-Portfolio/me" exact>
             <AboutMe/>
           </Route>
-          <Route path="/contact" exact>
+          <Route path="/React-Portfolio/contact" exact>
             <Contact/>
           </Route>
-          <Redirect path="/" />
+          <Redirect path="/React-Portfolio" />
         </Switch>
       </BrowserRouter>
 

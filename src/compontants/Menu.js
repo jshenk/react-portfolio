@@ -11,10 +11,10 @@ function Menu () {
 
   return (
     <div className="flyout-menu">
-      <Link to="/" >Home</Link>
-      <Link to="/work" >My Work</Link>
-      <Link to="/me" >About Me</Link>
-      <Link to="contact" >Contact</Link> 
+      <Link to="/React-Portfolio" >Home</Link>
+      <Link to="/React-Portfolio/work" >My Work</Link>
+      <Link to="/React-Portfolio/me" >About Me</Link>
+      <Link to="/React-Portfolio/contact" >Contact</Link> 
 
 
       <div className="flex">
