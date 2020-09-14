@@ -10,6 +10,7 @@ import aacc from '../images/aacc.png'
 import mscpa from '../images/mscpa.png'
 import nadcp from '../images/nadcp.png'
 import ficpa from '../images/ficpa.png'
+import hacker from '../images/hacker.png'
 import IconDrupal from '../icons/IconDrupal'
 import IconWordpress from '../icons/IconWordpress'
 import IconReact from '../icons/IconReact'
@@ -27,15 +28,15 @@ function MyWork () {
         },
         {
             title: 'Air Force Magazine',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: afm,
             link: 'https://www.airforcemag.com/',
-            tags: ['Wordpress', 'Feature Lead', 'Award Winner'],
+            tags: ['Wordpress', 'Feature Lead', 'Award Winner', 'Migration'],
             id: '2'
         },
         {
             title: 'Electrical Contractor',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: neca,
             link: 'https://www.ecmag.com/',
             tags: ['Drupal 8', 'Migration'],
@@ -43,7 +44,7 @@ function MyWork () {
         },
         {
             title: 'Sandy Spring Bank',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: ssb,
             link: '/',
             tags: ['Drupal 8', 'Award Winner'],
@@ -51,7 +52,7 @@ function MyWork () {
         },
         {
             title: 'International Society for Pharmaceutical Engineering',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: ispe,
             link: '/',
             tags: ['Drupal 8'],
@@ -59,43 +60,51 @@ function MyWork () {
         },
         {
             title: 'Binswanger Glass',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: bins,
             link: '/',
-            tags: ['Wordpress'],
+            tags: ['Wordpress', 'Migration'],
             id: '6'
         },
         {
             title: 'Lab Tests Online',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: aacc,
-            link: 'https://www.ecmag.com/',
+            link: '',
             tags: ['Drupal 8'],
             id: '7'
         },
         {
             title: 'The Massachusetts Society of Certified Public Accountants',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: mscpa,
-            link: 'https://www.ecmag.com/',
+            link: '',
             tags: ['Drupal 8'],
             id: '8'
         },
         {
             title: 'Florida Institute of CPAs',
-            summary: 'My quick blurb la la la',
+            summary: '',
             image: ficpa,
-            link: 'https://www.ecmag.com/',
+            link: '',
             tags: ['Drupal 8'],
             id: '9'
         },
         {
             title: 'National Association of Drug Court Professionals',
-            summary: 'My quick blurb la la la',
+            summary: 'Headless Drupal site, with a React frontend. Project provides an interactive cube to find drug court projects to enroll in, based on their risk assesement.',
             image: nadcp,
             link: '',
             tags: ['Drupal 8', 'React'],
             id: '10'
+        },
+        {
+            title: 'Hacker News',
+            summary: 'News listing site built with React, pulling from the Hacker News API. Completed project using the "Road to React", by Robin Wieruch.',
+            image: hacker,
+            link: 'https://jshenk.github.io/hacker-news-stories/',
+            tags: ['React', 'API'],
+            id: '11'
         },
 
     ];
@@ -131,10 +140,10 @@ function MyWork () {
     const portfolioFilter = (filter !== false ? portfolio.filter(portfolio => portfolio.tags.includes(filter)) : portfolio)
 
     const portfolioListing = portfolioFilter.map((filteredItem) =>
-        <PortfolioCard key={filteredItem.id} title={filteredItem.title} image={filteredItem.image} url={filteredItem.link} tags={filteredItem.tags} />
+        <PortfolioCard key={filteredItem.id} title={filteredItem.title} image={filteredItem.image} summary={filteredItem.summary} url={filteredItem.link} tags={filteredItem.tags} />
     )
 
-    const currentFilter = (filter ? <div className="text-xl w-full font-bold uppercase mb-5 text-gray-700">Filtering by: {filter}</div> : <div className="text-gray-700 uppercase text-xl w-full font-bold mb-5">Filter My Portfolio</div>)
+    const currentFilter = (filter ? <div className="text-xl w-full font-bold uppercase mb-5 text-gray-700 text-right">Filtering by: {filter}</div> : <div className="text-right text-gray-700 uppercase text-xl w-full font-bold mb-5">Filter My Portfolio</div>)
 
     return (
         <div>
@@ -145,6 +154,7 @@ function MyWork () {
             <div className="container mx-auto ">
                 <div className="flex">
                     <div className="text-left w-2/3 pr-10 ">
+                        <h2 className="text-xl w-full font-bold uppercase mb-5 text-gray-700 text-left">Skills</h2>
                          <ul className="text-3xl grid grid-cols-2 mb-10">
                             <li>React</li>
                             <li>Drupal 6, 7, & 8</li>
