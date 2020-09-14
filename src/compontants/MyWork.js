@@ -1,17 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PortfolioCard from './PortfolioCard'
 import ngaus from '../images/ngaus.png'
 import afm from '../images/afm.png'
 import neca from '../images/neca.png'
+import ssb from '../images/ssb.png'
+import ispe from '../images/ispe.png'
+import bins from '../images/bins.png'
+import aacc from '../images/aacc.png'
+import mscpa from '../images/mscpa.png'
+import nadcp from '../images/nadcp.png'
+import ficpa from '../images/ficpa.png'
+import IconDrupal from '../icons/IconDrupal'
+import IconWordpress from '../icons/IconWordpress'
+import IconReact from '../icons/IconReact'
+import IconAward from '../icons/IconAward'
 
 function MyWork () {
     const portfolio = [
         {
             title: 'National Guard Association',
-            summary: 'My quick blurb',
+            summary: 'Lead development team to produce one of the fastest builds in company history. Delivered project under budget and ahead of the deadline.',
             image: ngaus,
             link: 'https://www.ngaus.org/',
-            tags: ['tag1', 'tag2', 'tag3'],
+            tags: ['Drupal 8', 'Feature Lead', 'Award Winner'],
             id: '1'
         },
         {
@@ -19,7 +30,7 @@ function MyWork () {
             summary: 'My quick blurb la la la',
             image: afm,
             link: 'https://www.airforcemag.com/',
-            tags: ['tag1', 'tag2'],
+            tags: ['Wordpress', 'Feature Lead', 'Award Winner'],
             id: '2'
         },
         {
@@ -27,28 +38,159 @@ function MyWork () {
             summary: 'My quick blurb la la la',
             image: neca,
             link: 'https://www.ecmag.com/',
-            tags: ['tag1', 'tag2'],
+            tags: ['Drupal 8', 'Migration'],
             id: '3'
         },
-
+        {
+            title: 'Sandy Spring Bank',
+            summary: 'My quick blurb la la la',
+            image: ssb,
+            link: '/',
+            tags: ['Drupal 8', 'Award Winner'],
+            id: '4'
+        },
+        {
+            title: 'International Society for Pharmaceutical Engineering',
+            summary: 'My quick blurb la la la',
+            image: ispe,
+            link: '/',
+            tags: ['Drupal 8'],
+            id: '5'
+        },
+        {
+            title: 'Binswanger Glass',
+            summary: 'My quick blurb la la la',
+            image: bins,
+            link: '/',
+            tags: ['Wordpress'],
+            id: '6'
+        },
+        {
+            title: 'Lab Tests Online',
+            summary: 'My quick blurb la la la',
+            image: aacc,
+            link: 'https://www.ecmag.com/',
+            tags: ['Drupal 8'],
+            id: '7'
+        },
+        {
+            title: 'The Massachusetts Society of Certified Public Accountants',
+            summary: 'My quick blurb la la la',
+            image: mscpa,
+            link: 'https://www.ecmag.com/',
+            tags: ['Drupal 8'],
+            id: '8'
+        },
+        {
+            title: 'Florida Institute of CPAs',
+            summary: 'My quick blurb la la la',
+            image: ficpa,
+            link: 'https://www.ecmag.com/',
+            tags: ['Drupal 8'],
+            id: '9'
+        },
+        {
+            title: 'National Association of Drug Court Professionals',
+            summary: 'My quick blurb la la la',
+            image: nadcp,
+            link: '',
+            tags: ['Drupal 8', 'React'],
+            id: '10'
+        },
 
     ];
-    const portfolioListing = portfolio.map((item, index) =>
-        <PortfolioCard key={item.id} title={item.title} summary={item.summary} image={item.image} url={item.link} tags={item.tags} />
+    const tags = [
+        {
+            label: 'Drupal 8',
+            icon: <IconDrupal height="70px" width="70px" className="mx-auto" fill="#ecc94b"/>
+        },
+        {
+            label: 'Wordpress',
+            icon: <IconWordpress height="70px" width="70px" className="mx-auto" fill="#ecc94b"/>
+        },
+        {
+            label: 'React',
+            icon: <IconReact height="70px" width="70px" className="mx-auto" fill="#ecc94b"/>
+        },
+        {
+            label: 'Award Winner',
+            icon: <IconAward height="70px" width="70px" className="mx-auto" fill="#ecc94b"/>
+        }
+    ]
+
+    const [filter, setFilter] = useState(false)
+
+    const tagFilter = tags.map((tag, index) =>
+        <button
+        className="p-4 shadow text-gray-900 h-32 text-2xl" 
+        onClick={() => {
+            setFilter(tag.label)
+        }} key={index}>{tag.icon}{tag.label}</button>
     )
+
+    const portfolioFilter = (filter !== false ? portfolio.filter(portfolio => portfolio.tags.includes(filter)) : portfolio)
+
+    const portfolioListing = portfolioFilter.map((filteredItem) =>
+        <PortfolioCard key={filteredItem.id} title={filteredItem.title} image={filteredItem.image} url={filteredItem.link} tags={filteredItem.tags} />
+    )
+
+    const currentFilter = (filter ? <div className="text-xl w-full font-bold uppercase mb-5 text-gray-700">Filtering by: {filter}</div> : <div className="text-gray-700 uppercase text-xl w-full font-bold mb-5">Filter My Portfolio</div>)
+
     return (
         <div>
-        <h1 className="container mx-auto font-black leading-none text-6xl text-left uppercase mb-10">My<br/>Work<span className="bg-yellow-500 h-5 w-5 inline-block rounded-full"></span></h1>
-        <div className="grid gap-10 grid-cols-3 container mx-auto">
-            {portfolioListing}
-        
-            {/* <PortfolioCard title="National Guard Association" summary="My quick blurb" image={ngaus} url="https://www.ngaus.org/"/>
-            <PortfolioCard title="Air Force Magazine" summary="My quick blurb" image={afm} url="https://www.airforcemag.com/"/>
-            <PortfolioCard title="Electrical Contractor Magazine" summary="My quick blurb" image={neca} url="https://www.ecmag.com/"/>
-            <PortfolioCard title="Sandy Spring Bank" summary="My quick blurb" image="https://picsum.photos/600/300" url="https://www.sandyspringbank.com/"/>
-            <PortfolioCard title="Florida Institute of CPAs" summary="My quick blurb" image="https://picsum.photos/600/300" url="https://www.ngaus.org/"/>
-            <PortfolioCard title="National Association of Drug Court Professionals" summary="My quick blurb" image="https://picsum.photos/600/300" url="/"/> */}
-        </div>
+            <div className="bg-purple-500 h-about-lead w-2/4 mt-10">
+
+            </div>
+            <h1 className="-mt-56 container mx-auto font-black leading-none text-title-inner text-left uppercase mb-10">My<br/>Work<span className="bg-yellow-500 h-5 w-5 inline-block rounded-full"></span></h1>
+            <div className="container mx-auto ">
+                <div className="flex">
+                    <div className="text-left w-2/3 pr-10 ">
+                         <ul className="text-3xl grid grid-cols-2 mb-10">
+                            <li>React</li>
+                            <li>Drupal 6, 7, & 8</li>
+                            <li>Javascript</li>
+                            <li>Wordpress</li>
+                            <li>SASS/CSS</li>
+                            <li>PHP</li>
+                        </ul>
+
+                        <div className="grid grid-cols-3 gap-10 text-xl">
+                            <ul>
+                                <li>Git</li>
+                                <li>Gulp</li>
+                                <li>Composer</li>
+                                <li>Acquia</li>
+                                <li>Drupal custom modules</li>
+                            </ul>
+                            <ul>
+                                <li>Foundation</li>
+                                <li>Bootstrap</li>
+                                <li>Material UI</li>
+                                <li>Pattern Lab</li>
+                            </ul>
+                            <ul>
+                                <li>Twig</li>
+                                <li>Deployer</li>
+                                <li>Linux</li>
+                                <li>MYSQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="w-1/3">
+                        {currentFilter}
+                        <div className="grid grid-cols-2 gap-5">
+                        {tagFilter}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="bg-teal-400 h-20 ml-auto mt-20 w-1/3"></div>
+            <div className="w-10/12 mx-auto mb-10">
+                <h2 className="-mt-10 font-bold text-5xl text-right uppercase container mx-auto">Samples</h2>
+                <div className="grid gap-10 grid-cols-3 pt-10">
+                    {portfolioListing}
+                </div>
+            </div>
         </div>
     );
 }

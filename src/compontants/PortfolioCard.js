@@ -8,16 +8,16 @@ function PortfolioCard(props) {
     );
   });
   return (
-    <div className="rounded overflow-hidden shadow-lg bg-white">
-      <img src={props.image} alt="test" />
-      <div className="p-6">
-          <div className="font-bold text-xl mb-2"><a href={props.url} target="_blank" >{props.title}</a></div>
-          <p className="text-gray-700 text-base">
+    <div className="rounded overflow-hidden shadow-lg bg-white flex flex-col">
+      <img className="w-full" src={props.image} alt="test" />
+      <div className="p-6 pb-0">
+          <div className="font-bold text-2xl mb-2"><a href={props.url} >{props.title}</a></div>
+          <p className="text-gray-700 text-base text-left">
             {props.summary}
           </p>
         </div>
         
-        <div className="p-6">
+        <div className="p-6 mt-auto">
           {projectTags}
         </div>
     </div>

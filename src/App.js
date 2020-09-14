@@ -12,6 +12,7 @@ import {
   Redirect,
   BrowserRouter
 } from 'react-router-dom'
+import IconChevronCircle from './icons/IconChevronCircle';
 
 
 function App() {
@@ -24,10 +25,12 @@ function App() {
     <div className="stage">
       <BrowserRouter>
         {toggle && <Menu /> }
-        <button onClick={() => {
+        <button
+        className="uppercase font-medium mt-10 focus:outline-none menu-toggle transition" 
+        onClick={() => {
           setToggle(!toggle)
           setMenuText(!menuText)
-        }} >{menuText ? 'Close Menu' : 'Open Menu'}</button>
+        }} >{menuText ? 'Close Menu' : 'Open Menu'}<IconChevronCircle fill="#ecc94b" className={menuText ? 'transition transform rotate-180 duration-500 ease-in-out m-auto' : 'm-auto transition duration-500 ease-in-out'} height="35px" width="35px" /> </button>
         <Switch>
           <Route path="/React-Portfolio" exact>
             <Home/>

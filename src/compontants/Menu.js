@@ -1,36 +1,38 @@
 import {
-  Switch,
-  BrowserRouter,
-  Route,
   Link,
-  Redirect
 } from "react-router-dom"
-import React, { useState, useRef } from 'react'
+import React from 'react'
+import IconGithub from "../icons/IconGithub"
+import IconLinkedin from "../icons/IconLinkedin"
+import IconTwitter from "../icons/IconTwitter"
+import IconMail from "../icons/IconMail"
 
 function Menu () {
 
   return (
     <div className="flyout-menu">
-      <Link to="/React-Portfolio" >Home</Link>
-      <Link to="/React-Portfolio/work" >My Work</Link>
-      <Link to="/React-Portfolio/me" >About Me</Link>
-      <Link to="/React-Portfolio/contact" >Contact</Link> 
-
-
-      <div className="flex">
-        <a href="https://github.com/jshenk" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-          Github
-        </a>
-        <a href="https://www.linkedin.com/in/jennashenk/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-          Linkedin
-        </a>
-        <a href="https://twitter.com/jshenk5" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-          Twitter
-        </a>
+      <div className="flex bg-yellow-300 px-10 py-5 text-lg">
+        <div className="w-1/2 text-left">
+          <a href="https://github.com/jshenk" className="pr-4">
+          <IconGithub height="25px" width="25px" className="inline" />
+          </a>
+          <a href="https://www.linkedin.com/in/jennashenk/" className="pr-4">
+          <IconLinkedin height="25px" width="25px" className="inline" />
+          </a>
+          <a href="https://twitter.com/jshenk5" className="pr-4">
+          <IconTwitter height="25px" width="25px" className="inline"  />
+          </a>
+        </div>
+        <div className="w-1/2 text-right">
+          <a href="mailto:jslynne@gmail.com" className="pr-4"><IconMail height="25px" width="25px" className="inline"  /></a>
+          <span>Baltimore, MD</span>
+        </div>
       </div>
-      <div className="flex">
-        <a href="mailto:jslynne@gmail.com">Email</a>
-        <p>Baltimore, MD</p>
+      <div className="py-3">
+      <Link to="/React-Portfolio" className="block font-bold text-4xl"><span className="menu-link-hover">Home</span></Link>
+      <Link to="/React-Portfolio/work" className="block font-bold text-4xl"><span className="menu-link-hover">My Work</span> </Link>
+      <Link to="/React-Portfolio/me" className="block font-bold text-4xl"><span className="menu-link-hover"> About Me</span></Link>
+      <Link to="/React-Portfolio/contact" className="block font-bold text-4xl"><span className="menu-link-hover">Contact</span> </Link> 
       </div>
 
     </div>
