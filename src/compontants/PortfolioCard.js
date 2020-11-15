@@ -4,21 +4,20 @@ function PortfolioCard(props) {
   const tags = props.tags;
   const projectTags = tags.map(function(tag) {
     return (
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 text-up">{tag}</span>
+      <span className="w-full text-gray-600 text-xs md:text-sm pr-4 uppercase">{tag}</span>
     );
   });
   return (
-    <div className="rounded overflow-hidden shadow-lg bg-white flex flex-col">
-      <img className="w-full" src={props.image} alt="test" />
+    <div className="rounded overflow-hidden shadow-lg bg-white flex flex-col text-left">
+        <img className="w-full" src={props.image} alt="test" />
       <div className="p-6 pb-0">
-          <div className="font-bold text-2xl mb-2"><a href={props.url} >{props.title}</a></div>
-          <p className="text-gray-700 text-base text-left">
+          <div className="w-full font-bold text-xl text-gray-900 mb-3"><a href={props.url} >{props.title}</a></div>
+          <p className="text-gray-800 text-base mb-5">
             {props.summary}
           </p>
-        </div>
-        
-        <div className="p-6 mt-auto">
-          {projectTags}
+          <div className="pb-6">
+            {projectTags}
+          </div>
         </div>
     </div>
   );
