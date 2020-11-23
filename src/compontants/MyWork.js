@@ -11,6 +11,7 @@ import mscpa from '../images/mscpa.png'
 import nadcp from '../images/nadcp.png'
 import ficpa from '../images/ficpa.png'
 import hacker from '../images/hacker.png'
+import cmaa from '../images/cmaa.png'
 import IconDrupal from '../icons/IconDrupal'
 import IconWordpress from '../icons/IconWordpress'
 import IconReact from '../icons/IconReact'
@@ -45,7 +46,7 @@ function MyWork () {
         },
         {
             title: 'Air Force Magazine',
-            summary: '',
+            summary: 'Wordpress migration, with a full build using the Gutenberg editor - both custom and basic blocks.',
             image: afm,
             link: 'https://www.airforcemag.com/',
             tags: ['Wordpress', 'Feature Lead', 'Award Winner', 'Migration'],
@@ -53,7 +54,7 @@ function MyWork () {
         },
         {
             title: 'Electrical Contractor',
-            summary: '',
+            summary: 'Drupal 7 to 8 migration, with full redesign.',
             image: neca,
             link: 'https://www.ecmag.com/',
             tags: ['Drupal 8', 'Migration'],
@@ -61,7 +62,7 @@ function MyWork () {
         },
         {
             title: 'Sandy Spring Bank',
-            summary: '',
+            summary: 'Drupal 8 rebuild, with full redesign.',
             image: ssb,
             link: '/',
             tags: ['Drupal 8', 'Award Winner'],
@@ -69,7 +70,7 @@ function MyWork () {
         },
         {
             title: 'International Society for Pharmaceutical Engineering',
-            summary: '',
+            summary: 'Drupal 8 rebuild, with an integration with iMIS.',
             image: ispe,
             link: '/',
             tags: ['Drupal 8'],
@@ -77,7 +78,7 @@ function MyWork () {
         },
         {
             title: 'Binswanger Glass',
-            summary: '',
+            summary: 'Migration to Wordpress, with a strong focus on ADA compliance.',
             image: bins,
             link: '/',
             tags: ['Wordpress', 'Migration'],
@@ -85,7 +86,7 @@ function MyWork () {
         },
         {
             title: 'Lab Tests Online',
-            summary: '',
+            summary: 'Multilingual Drupal 8 site, with 14 different translations totallying ~1 Million page views a day.',
             image: aacc,
             link: '',
             tags: ['Drupal 8'],
@@ -93,7 +94,7 @@ function MyWork () {
         },
         {
             title: 'The Massachusetts Society of Certified Public Accountants',
-            summary: '',
+            summary: 'Created a custom child theme to be re-used for several CPA sites. Integration with AMNet, and advanced SASS to make the theme highly customizable.',
             image: mscpa,
             link: '',
             tags: ['Drupal 8'],
@@ -101,11 +102,19 @@ function MyWork () {
         },
         {
             title: 'Florida Institute of CPAs',
-            summary: '',
+            summary: 'Created a custom child theme to be re-used for several CPA sites. Integration with AMNet, and advanced SASS to make the theme highly customizable.',
             image: ficpa,
-            link: '',
+            link: 'https://ficpa.org/',
             tags: ['Drupal 8'],
             id: '9'
+        },
+                {
+            title: 'Construction Management Association',
+            summary: 'Created a custom child theme to be re-used for several CPA sites. Integration with AMNet, and advanced SASS to make the theme highly customizable.',
+            image: cmaa,
+            link: 'https://ficpa.org/',
+            tags: ['Drupal 8'],
+            id: '13'
         },
 
     ];
@@ -147,13 +156,13 @@ function MyWork () {
     const currentFilter = (filter ? <div className="mb-4 uppercase text-gray-600">Filtering by: <span className="border-b-2 border-gray-800">{filter}</span></div> : <div className="mb-4 uppercase text-gray-600">Filter My Portfolio</div>)
 
     return (
-        <div>
-            <div className="w-1/2 ml-auto pt-10 pr-10">
+        <div className="p-6 lg:p-0">
+            <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
                 <Menu />
             </div>
             <div className="text-left container mx-auto my-10">
                 <h1 className="mb-4 text-gray-800 text-6xl">Stack</h1>
-                <div className="grid grid-cols-4 gap-10">
+                <div className="bg-gray-200 gap-10 grid grid-cols-2 md:grid-cols-4 p-6 rounded shadow-md">
                     <ul>
                         <li className="border-b-4 border-yellow-500 inline">React</li>
                         <li>Javascript</li>
@@ -184,10 +193,10 @@ function MyWork () {
 
                 </div>
             </div>
-            <div className="text-left container m-auto">
+            <div className="text-left container mx-auto mb-10">
                 {currentFilter}
                 {tagFilter}
-                <div className="mt-10 grid gap-16 grid-cols-3 container mx-auto">
+                <div className="mt-10 grid gap-16 lg:grid-cols-3 container mx-auto">
                 {portfolioListing}
                 </div>
             </div>

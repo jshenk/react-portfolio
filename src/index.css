@@ -12,20 +12,13 @@ code {
     monospace;
 }
 
-.text-title {
-  font-size: 12rem;
+@media (min-width: 768px) {
+  .position-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
-
-.text-title-inner {
-  font-size: 10rem;
-}
-
-.position-center {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .menu-link-hover {
   position: relative;
 }
@@ -43,16 +36,4 @@ code {
   transform: scaleX(0) translateY(-50%);
   transform-origin: left center;
   transition: transform 400ms cubic-bezier(1, 0, 0, 1) 0ms;
-}
-
-.menu-link-hover:hover:before {
-  transform: scaleX(1) translateY(-50%);
-}
-
-.menu-toggle:hover svg {
-  transform: translateY(10px);
-}
-
-.h-about-lead {
-  min-height: 400px;
 }

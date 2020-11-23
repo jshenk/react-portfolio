@@ -9,26 +9,26 @@ import Menu from './Menu';
 
 function AboutMe () {
   return (
-    <div>
-      <div className="pt-10 pr-10">
+    <div className="p-6 lg:p-0">
+      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
         <Menu />
       </div>
       <div className="container mx-auto text-left mt-10">
         <h1 className="mb-4 text-gray-800 text-6xl">Background</h1>
-        <div className="text-left text-lg flex">
-        <div className="w-1/3 mb-10">
+        <div className="text-left text-lg grid lg:grid-cols-3">
+        <div className="mb-10">
           <h2 className="text-xl font-bold mb-5 text-gray-900" >Education</h2>
           <div><IconSchool height="25px" width="25px" className="inline mr-3" />Stevenson University</div>
           <div><IconDegree height="25px" width="25px" className="inline mr-3" />Business Information Systems <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 text-up">'16</span></div>
         </div>
-        <div className="w-1/3 mb-10">
+        <div className="mb-10">
           <h2 className="text-xl font-bold mb-5 text-gray-900" >Learning</h2>
           <ul className="list-disc ml-6">
             <li>React Workshop - Fundimenals to Advanced</li>
             <li>Betamore Frontend Development</li>
           </ul>
         </div>
-        <div className="w-1/3 mb-10">
+        <div className="mb-10">
           <h2 className="text-xl font-bold mb-5 text-gray-900" >Pro Bono Web Work</h2>
           <ul className="list-disc ml-6">
             <li>Women's Law Center of Maryland</li>
@@ -37,7 +37,7 @@ function AboutMe () {
         </div>
       
         </div>
-        <div className="grid gap-8 grid-cols-2 mb-10">
+        <div className="grid gap-8 md:grid-cols-2 mb-10">
           <div className="bg-gray-200 p-5">
           <h2 className="text-gray-700 text-lg uppercase mb-2">Writing</h2>
             <ul className="list-disc ml-6">
@@ -67,7 +67,7 @@ function AboutMe () {
             <div span className="font-medium">Mid-Level Developer <span className="text-gray-600 mb-4 font-normal">2018 - Present</span></div>
             <div className="font-medium">Junior Developer <span className="text-gray-600 mb-4 font-normal">2017 - 2018</span> </div>
             <div className="font-medium mb-5">Intern <span className="text-gray-600 mb-4 font-normal">2016 - 2017</span></div>
-              <ul className="gap-x-10 grid grid-cols-2 list-disc ml-6 text-lg">
+              <ul className="gap-x-10 grid md:grid-cols-2 list-disc ml-6 text-lg">
                 <li>Lead monthly, company-wide, frontend presentations to cover new topics in frontend tech, and educate on company frontend standards.</li>
                 <li>Oversaw frontend standards for the entire tech company, by providing code reviews and consulting on new builds as to what tech stack to use.</li>
                 <li>Built a headless Drupal 8 site, with a React frontend. Project provided an interactive risk assesemnt cube for at-risk individuals who are navigating drug court.</li>
