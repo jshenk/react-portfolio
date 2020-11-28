@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import './tailwind.generated.css';
 import MyWork from './compontants/MyWork';
@@ -11,8 +11,6 @@ import {
   Redirect,
   BrowserRouter
 } from 'react-router-dom'
-import IconChevronCircle from './icons/IconChevronCircle';
-
 
 function App() {
 
