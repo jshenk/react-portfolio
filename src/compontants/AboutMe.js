@@ -1,10 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import IconDegree from '../icons/IconDegree';
-import IconGithub from '../icons/IconGithub';
-import IconLinkedin from '../icons/IconLinkedin';
 import IconSchool from '../icons/IconSchool';
-import IconTwitter from '../icons/IconTwitter';
-import BioImage from '../images/bio.JPG'
 import Menu from './Menu';
 
 function AboutMe () {
