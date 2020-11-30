@@ -20,19 +20,19 @@ function App() {
     <div className="stage">
       <BrowserRouter>
         <Switch>
-          <Route path="/React-Portfolio" exact>
+          <Route path="/react-portfolio" exact>
             <Home/>
           </Route>
-          <Route path="/work" exact>
+          <Route path="/react-portfolio/work" exact>
             <MyWork/>
           </Route>
-          <Route path="/me" exact>
+          <Route path="/react-portfolio/me" exact>
             <AboutMe/>
           </Route>
-          <Route path="/contact" exact>
+          <Route path="/react-portfolio/contact" exact>
             <Contact/>
           </Route>
-          <Redirect path="/React-Portfolio" />
+          <Redirect path="/react-portfolio" />
         </Switch>
       </BrowserRouter>
 
