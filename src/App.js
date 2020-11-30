@@ -18,18 +18,18 @@ function App() {
   <div className="App">
 
     <div className="stage">
-      <BrowserRouter>
+      <BrowserRouter basename="/react-portfolio">
         <Switch>
           <Route path="/react-portfolio" exact>
             <Home/>
           </Route>
-          <Route path="/react-portfolio/work" exact>
+          <Route path="/work" exact>
             <MyWork/>
           </Route>
-          <Route path="/react-portfolio/me" exact>
+          <Route path="/me" exact>
             <AboutMe/>
           </Route>
-          <Route path="/react-portfolio/contact" exact>
+          <Route path="/contact" exact>
             <Contact/>
           </Route>
           <Redirect path="/react-portfolio" />
