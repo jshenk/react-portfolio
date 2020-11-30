@@ -141,14 +141,14 @@ function MyWork () {
             summary: 'Drupal 8 rebuild, with a custom theme using Bootstrap 4',
             image: sema,
             link: '',
-            tags: ['Wordpress', 'Future Launch'],
+            tags: ['Drupal', 'Future Launch'],
             id: '16'
         },
         {
             title: 'RCM&D',
             summary: 'Drupal 8 rebuild, with a custom theme',
             image: rcmd,
-            link: '',
+            link: 'https://www.rcmd.com/',
             tags: ['Drupal 8'],
             id: '17'
         },
