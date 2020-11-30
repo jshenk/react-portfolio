@@ -11,6 +11,10 @@ import mscpa from '../images/mscpa.png'
 import nadcp from '../images/nadcp.png'
 import ficpa from '../images/ficpa.png'
 import hacker from '../images/hacker.png'
+import barnard from '../images/barnard.png'
+import nbaa from '../images/nbaa.png'
+import rcmd from '../images/rcmd.png'
+import sema from '../images/sema.png'
 import cmaa from '../images/cmaa.png'
 import IconDrupal from '../icons/IconDrupal'
 import IconWordpress from '../icons/IconWordpress'
@@ -25,7 +29,7 @@ function MyWork () {
             summary: 'Headless Drupal site, with a React frontend. Project provides an interactive cube to find drug court projects to enroll in, based on their risk assesement.',
             image: nadcp,
             link: '',
-            tags: ['Drupal 8', 'React'],
+            tags: ['Drupal 8', 'React', 'Future Launch'],
             id: '10'
         },
         {
@@ -38,7 +42,7 @@ function MyWork () {
         },
         {
             title: 'National Guard Association',
-            summary: 'Lead development team to produce one of the fastest builds in company history. Delivered project under budget and ahead of the deadline.',
+            summary: 'Drupal 8 rebuild with netFORUM integration.',
             image: ngaus,
             link: 'https://www.ngaus.org/',
             tags: ['Drupal 8', 'Feature Lead', 'Award Winner'],
@@ -86,7 +90,7 @@ function MyWork () {
         },
         {
             title: 'Lab Tests Online',
-            summary: 'Multilingual Drupal 8 site, with 14 different translations totallying ~1 Million page views a day.',
+            summary: 'Multilingual Drupal 8 site, with 14 different translations totalling ~1 Million page views a day.',
             image: aacc,
             link: '',
             tags: ['Drupal 8'],
@@ -97,7 +101,7 @@ function MyWork () {
             summary: 'Created a custom child theme to be re-used for several CPA sites. Integration with AMNet, and advanced SASS to make the theme highly customizable.',
             image: mscpa,
             link: '',
-            tags: ['Drupal 8'],
+            tags: ['Drupal 8', 'Future Launch'],
             id: '8'
         },
         {
@@ -108,13 +112,45 @@ function MyWork () {
             tags: ['Drupal 8'],
             id: '9'
         },
-                {
+        {
             title: 'Construction Management Association',
             summary: 'Created a custom child theme to be re-used for several CPA sites. Integration with AMNet, and advanced SASS to make the theme highly customizable.',
             image: cmaa,
             link: 'https://ficpa.org/',
             tags: ['Drupal 8'],
             id: '13'
+        },
+        {
+            title: 'Barnard College',
+            summary: 'Frontend theme development and site maintenance. Featured enahcments include a fellowship database, which imports fellowship descriptions from a spreadsheet into Drupal nodes, and displays in a fiterable view.',
+            image: barnard,
+            link: 'https://barnard.edu/competitive-fellowships',
+            tags: ['Drupal 8'],
+            id: '14'
+        },
+        {
+            title: 'National Business Aviation Association',
+            summary: 'Wordpress rebuild, with a custom frontend theme including a complex megamenu',
+            image: nbaa,
+            link: 'https://nbaa.org/',
+            tags: ['Wordpress'],
+            id: '15'
+        },
+        {
+            title: 'Specialty Equipment Market Association',
+            summary: 'Drupal 8 rebuild, with a custom theme using Bootstrap 4',
+            image: sema,
+            link: '',
+            tags: ['Wordpress', 'Future Launch'],
+            id: '16'
+        },
+        {
+            title: 'RCM&D',
+            summary: 'Drupal 8 rebuild, with a custom theme',
+            image: rcmd,
+            link: '',
+            tags: ['Drupal 8'],
+            id: '17'
         },
 
     ];
