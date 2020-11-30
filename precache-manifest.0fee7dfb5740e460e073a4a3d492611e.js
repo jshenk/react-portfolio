@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e05c906d22b0a1f51ba9ab06a7b7435",
+    "revision": "db35d321e7739d3ff547cfbcdb0e0905",
     "url": "/react-portfolio/index.html"
   },
   {
-    "revision": "2b3013ef2bea054df4f3",
+    "revision": "249e6a6ec4746625bb35",
     "url": "/react-portfolio/static/css/main.6069b20a.chunk.css"
   },
   {
-    "revision": "054415e33755f97a7ad7",
-    "url": "/react-portfolio/static/js/2.ff1bcaea.chunk.js"
+    "revision": "fe1d93b1cd96402cb772",
+    "url": "/react-portfolio/static/js/2.67db85da.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/react-portfolio/static/js/2.ff1bcaea.chunk.js.LICENSE.txt"
+    "url": "/react-portfolio/static/js/2.67db85da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b3013ef2bea054df4f3",
-    "url": "/react-portfolio/static/js/main.13f3ddae.chunk.js"
+    "revision": "249e6a6ec4746625bb35",
+    "url": "/react-portfolio/static/js/main.d6343fde.chunk.js"
   },
   {
     "revision": "e5662868e64e3bfb1215",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f3ec5922460fe37e04579ae1ffd12ff",
     "url": "/react-portfolio/static/media/afm.8f3ec592.png"
+  },
+  {
+    "revision": "ff5795beaa96b080d4c8f31471e4cc68",
+    "url": "/react-portfolio/static/media/barnard.ff5795be.png"
   },
   {
     "revision": "8ce107defd0191ab61e9e825724f6a17",
@@ -64,12 +68,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-portfolio/static/media/nadcp.d734e0e9.png"
   },
   {
+    "revision": "7211384cf5f14bed95092e62cbc9b6aa",
+    "url": "/react-portfolio/static/media/nbaa.7211384c.png"
+  },
+  {
     "revision": "582c3e72c7f7e5d03d99cdbccbfaddae",
     "url": "/react-portfolio/static/media/neca.582c3e72.png"
   },
   {
     "revision": "8fd86ff2787eaf5e99d68f819235ec4f",
     "url": "/react-portfolio/static/media/ngaus.8fd86ff2.png"
+  },
+  {
+    "revision": "d727ddb64c7921accf4bf64b2baf63ac",
+    "url": "/react-portfolio/static/media/rcmd.d727ddb6.png"
+  },
+  {
+    "revision": "24a21767955f0059e6625b3532b2dff9",
+    "url": "/react-portfolio/static/media/sema.24a21767.png"
   },
   {
     "revision": "adb5c511b662d6d124ceae2517d204e4",
