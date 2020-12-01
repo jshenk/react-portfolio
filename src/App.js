@@ -8,7 +8,6 @@ import Home from './compontants/Home';
 import {
   Switch,
   Route,
-  Redirect,
   BrowserRouter
 } from 'react-router-dom'
 
@@ -20,19 +19,10 @@ function App() {
     <div className="stage">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/">
-            <Home/>
-          </Route>
-          <Route path="/work">
-            <MyWork/>
-          </Route>
-          <Route path="/me">
-            <AboutMe/>
-          </Route>
-          <Route path="/contact">
-            <Contact/>
-          </Route>
-          <Redirect to="/react-portfolio" />
+          <Route exact path="/" component={Home} />
+          <Route path="/work" component={MyWork} />
+          <Route path="/me" component={AboutMe} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </BrowserRouter>
 

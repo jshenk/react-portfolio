@@ -223,7 +223,7 @@ function MyWork () {
                     <ul>
                         <li>Twig</li>
                         <li>Linux</li>
-                        <li>MYSQL</li>
+                        <li>MySQL</li>
                         <li>Acquia</li>
                     </ul>
 
