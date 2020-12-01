@@ -33,7 +33,7 @@ function Home () {
               <a href="https://twitter.com/jshenk5" className="pr-4">
               <IconTwitter height="25px" width="25px" className="inline" fill="#2d3748"/>
               </a>   
-              <Link to="/react-portfolio/contact" className="pr-4">
+              <Link to="/contact" className="pr-4">
                 <IconMail height="25px" width="25px" className="inline" fill="#2d3748"/>
               </Link> 
             </div>
