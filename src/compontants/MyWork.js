@@ -16,6 +16,7 @@ import nbaa from '../images/nbaa.png'
 import rcmd from '../images/rcmd.png'
 import sema from '../images/sema.png'
 import cmaa from '../images/cmaa.png'
+import jenna from '../images/jenna.png'
 import IconDrupal from '../icons/IconDrupal'
 import IconWordpress from '../icons/IconWordpress'
 import IconReact from '../icons/IconReact'
@@ -152,6 +153,14 @@ function MyWork () {
             tags: ['Drupal 8'],
             id: '17'
         },
+        {
+            title: 'Personal Website',
+            summary: 'Built completely with React, utilizing Create React App, React Router, and TailwindCSS.',
+            image: jenna,
+            link: 'https://jennashenk.com/',
+            tags: ['React'],
+            id: '18'
+        },
 
     ];
     const tags = [
@@ -201,7 +210,7 @@ function MyWork () {
                 <div className="bg-gray-200 gap-10 grid grid-cols-2 md:grid-cols-4 p-6 rounded shadow-md">
                     <ul>
                         <li className="border-b-4 border-yellow-500 inline">React</li>
-                        <li>Javascript</li>
+                        <li>JavaScript</li>
                         <li>SASS/CSS</li>
                         <li className="border-b-4 border-yellow-500 inline">PHP</li>
                         <li>C++</li>
@@ -225,6 +234,7 @@ function MyWork () {
                         <li>Linux</li>
                         <li>MySQL</li>
                         <li>Acquia</li>
+                        <li>React Router</li>
                     </ul>
 
                 </div>
