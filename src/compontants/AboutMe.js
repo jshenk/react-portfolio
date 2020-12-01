@@ -64,18 +64,21 @@ function AboutMe () {
             <div className="font-medium">Junior Developer <span className="text-gray-600 mb-4 font-normal">2017 - 2018</span> </div>
             <div className="font-medium mb-5">Intern <span className="text-gray-600 mb-4 font-normal">2016 - 2017</span></div>
               <ul className="gap-x-10 grid md:grid-cols-2 list-disc ml-6 text-lg">
-                <li>Lead monthly, company-wide, frontend presentations to cover new topics in frontend tech, and educate on company frontend standards.</li>
-                <li>Oversaw frontend standards for the entire tech company, by providing code reviews and consulting on new builds as to what tech stack to use.</li>
-                <li>Built a headless Drupal 8 site, with a React frontend. Project provided an interactive risk assesemnt cube for at-risk individuals who are navigating drug court.</li>
-                <li>Work with a team of developers to create an ecommerce application for creating and distributing team apparel. Apoplication used a React frontend, with a Symfony backend.</li>
-                <li>Lead developer for two Drupal 8 builds, managing a team of developers, third party integration partners, and performing code reviews.</li>
-                <li>Developed frontend themes for four Wordpress sites.</li>
-                <li>Blog articleMigrated numerous Drupal 7 sites to Drupal 8, maintaining the site's functionality while revamping the design for better user experience.Blog article</li>
-                <li>Led weekly status calls with clients pertaining to website strategy and project status.Performed module and security updates for Drupal 6, 7, and 8 websites.</li>
-                <li>Facilitated website training for our clients, accompanied with custom documentation websites.</li>
-                <li>Created custom PHP modules and theme functions for Drupal 6, 7 and 8.</li>
-                <li>Reviewed design compositions for project builds in order to give developer feedback prior to final client approval.</li>
-                <li>Created and tracked key performance indicators for each client.</li>
+                <li>Built 10+ Drupal 8 websites, working in both the frontend and backend. Development included integrations, custom modules, custom frontend themes, and custom content management systems. </li>
+                <li>Built a Drupal website with a headless React frontend, using JSON API and RESTful Web Services to connect the data. Developed a custom JSON API Drupal module, which rewrote the standard Drupal menu system to integrate with React. </li>
+                <li>Built Lab Tests Online (https://labtestsonline.org/) as a fully translatable Drupal 8 website. The site is currently translated to over 10  different languages. </li>
+                <li>Added Drupal translation coding standards to all Drupal 8 builds, to allow for translatable content in any website we produce. </li>
+                <li>Enforced codes standards, module upgrades and patches, and website enhancements for anywhere from 5 - 15 Drupal websites each month. </li>
+                <li>Experience developing in LAMP and LEMP stack environments, both in local development and production servers. </li>
+                <li>Built 3 Wordpress websites, with custom themes and backend integrations.</li>
+                <li>Developed a PWA for Drupal 8 website using the Progressive Web App module. Added custom features to ensure iPhone users could access the PWA as well.</li>
+                <li>Developed custom Drupal modules to extend and enhance Drupal websites. Modules pertained to both frontend theming as well as backend integrations.</li>
+                <li>Written patches for existing Drupal modules, which were submitted and verified by the Drupal community. </li>
+                <li>Experience working with integrations and Drupal modules written in PHP, Twig, and Symfony. </li>
+                <li>Created a custom frontend Drupal theme, that was then reused for two Drupal 8 builds. This theme leveraged Bootstrap and Sass to allow for the colors and design to be tailored for each site. </li>
+                <li>Developed responsive frontend themes that work for Chrome, Safari, Edge, Internet Explorer, and Firefox.</li>
+                <li>Mastery of Git and interfacing with the command-line without the use of GUI.</li>
+                <li>Applied jQuery to numerous Drupal and Wordpress sites, through either the use of Bootstrap, Foundation, or custom jQuery.</li>
               </ul>
           <h3 className="font-bold mt-10 text-3xl text-gray-900 uppercase">WebMechanix</h3>
           <div className="text-gray-600 mb-4">2016</div>
