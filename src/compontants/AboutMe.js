@@ -25,10 +25,10 @@ function AboutMe () {
           </ul>
         </div>
         <div className="mb-10">
-          <h2 className="text-xl font-bold mb-5 text-gray-900" >Pro Bono Web Work</h2>
+          <h2 className="text-xl font-bold mb-5 text-gray-900" >Certifications</h2>
           <ul className="list-disc ml-6">
-            <li>Women's Law Center of Maryland</li>
-            <li> Volunteering Untapped</li>
+            <li>Acquia Certified Frontend Specialist</li>
+            <li>Acquia Certified Site Builder</li>
           </ul>
         </div>
       
