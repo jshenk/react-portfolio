@@ -13,7 +13,7 @@ function Home () {
       <div className="bg-gray-800 md:flex md:h-screen items-center w-1/3 hidden">
       </div>
       <div className="flex flex-wrap md:h-screen items-center w-full md:w-2/3 mb-6 md:mb-0">
-        <div class="md:absolute md:top-0 md:right-0 mb-6 md:p-6 text-white lg:text-black">
+        <div className="md:absolute md:top-0 md:right-0 mb-6 md:p-6 text-white lg:text-black">
         <Menu />
         </div>
       </div>

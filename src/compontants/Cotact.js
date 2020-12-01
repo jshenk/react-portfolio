@@ -5,7 +5,7 @@ import Stanley from '../images/stanley.jpg'
 function Contact () {
   return (
     <div>
-      <div class="mb-6 md:p-6 md:bg-gray-800 md:text-white">
+      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
       <Menu />
       </div>
       <div className="flex container mx-auto mt-10">
