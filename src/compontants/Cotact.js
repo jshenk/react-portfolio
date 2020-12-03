@@ -23,9 +23,13 @@ function Contact() {
             {({ handleChange, success, error }) => (
               <>
                 <Honeypot />
-                {success && <p>Thanks for contacting us!</p>}
+                {success && (
+                  <p className="bg-green-200 p-3 mb-3">
+                    Thanks for contacting us!
+                  </p>
+                )}
                 {error && (
-                  <p>
+                  <p className="bg-red-200 mb-3 p-3">
                     Sorry, we could not reach our servers. Please try again
                     later.
                   </p>
