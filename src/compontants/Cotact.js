@@ -42,6 +42,7 @@ function Contact() {
                     type="text"
                     id="name"
                     name="name"
+                    onChange={handleChange}
                   />
                 </p>
                 <p>
@@ -56,6 +57,7 @@ function Contact() {
                     type="text"
                     id="email"
                     name="email"
+                    onChange={handleChange}
                   />
                 </p>
                 <p>
@@ -69,6 +71,7 @@ function Contact() {
                     className="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner px-4 mb-3"
                     id="message"
                     name="message"
+                    onChange={handleChange}
                   ></textarea>
                 </p>
                 <p>
