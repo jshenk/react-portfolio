@@ -63,7 +63,7 @@ function AboutMe () {
             <div span className="font-medium">Mid-Level Developer <span className="text-gray-600 mb-4 font-normal">2018 - Present</span></div>
             <div className="font-medium">Junior Developer <span className="text-gray-600 mb-4 font-normal">2017 - 2018</span> </div>
             <div className="font-medium mb-5">Intern <span className="text-gray-600 mb-4 font-normal">2016 - 2017</span></div>
-              <ul className="gap-x-10 grid md:grid-cols-2 list-disc ml-6 text-lg">
+              <ul className="grid md:space-x-10 md:grid-cols-2 list-disc ml-6 text-lg">
                 <li>Built 10+ Drupal 8 websites, working in both the frontend and backend. Development included integrations, custom modules, custom frontend themes, and custom content management systems. </li>
                 <li>Built a Drupal website with a headless React frontend, using JSON API and RESTful Web Services to connect the data. Developed a custom JSON API Drupal module, which rewrote the standard Drupal menu system to integrate with React. </li>
                 <li>Built Lab Tests Online (https://labtestsonline.org/) as a fully translatable Drupal 8 website. The site is currently translated to over 10  different languages. </li>
