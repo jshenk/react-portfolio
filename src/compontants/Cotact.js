@@ -5,7 +5,7 @@ import { NetlifyForm, Honeypot } from "react-netlify-forms";
 
 function Contact() {
   return (
-    <div>
+    <div className="p-6 lg:p-0">
       <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
         <Menu />
       </div>
