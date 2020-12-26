@@ -5,7 +5,7 @@ import { NetlifyForm, Honeypot } from "react-netlify-forms";
 
 function Contact() {
   return (
-    <div>
+    <div className="p-6 lg:p-0">
       <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
         <Menu />
       </div>
@@ -13,12 +13,12 @@ function Contact() {
         <h1 className="mb-4 text-gray-800 text-6xl">Give a Shout</h1>
         <p className="mb-5 text-xl">My secretary, Stanley, is standing by!</p>
       </div>
-      <div className="flex container mx-auto mt-10 mb-10 shadow p-10">
-        <div className="md:w-1/3 text-left md:pr-10">
+      <div className="flex flex-wrap container mx-auto my-10 shadow md:p-10">
+        <div className="w-full md:w-1/3 text-left md:pr-10 mb-2 md:mb-0">
           <img src={Stanley} alt="stanley" />
         </div>
 
-        <div className="md:w-2/3 text-left">
+        <div className="w-full md:w-2/3 text-left">
           <NetlifyForm name="contact" action="/thanks" honeypotName="bot-field">
             {({ handleChange, success, error }) => (
               <>
