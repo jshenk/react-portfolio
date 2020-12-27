@@ -17,6 +17,7 @@ import rcmd from "../images/rcmd.png";
 import sema from "../images/sema.png";
 import cmaa from "../images/cmaa.png";
 import jenna from "../images/jenna.png";
+import bsn from "../images/bsn.png";
 import IconDrupal from "../icons/IconDrupal";
 import IconWordpress from "../icons/IconWordpress";
 import IconReact from "../icons/IconReact";
@@ -151,7 +152,7 @@ function MyWork() {
       summary: "Drupal 8 rebuild, with a custom theme using Bootstrap 4",
       image: sema,
       link: "",
-      tags: ["Drupal", "Future Launch"],
+      tags: ["Drupal"],
       id: "16",
     },
     {
@@ -170,6 +171,14 @@ function MyWork() {
       link: "https://jennashenk.com/",
       tags: ["React"],
       id: "18",
+    },
+    {
+      title: "BSN Sports",
+      summary: "React & Typescript frontend, built on a Symfony backend.",
+      image: bsn,
+      link: "",
+      tags: ["React", "Future Launch"],
+      id: "19",
     },
   ];
   const tags = [
