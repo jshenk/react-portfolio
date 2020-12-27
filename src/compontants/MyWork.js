@@ -281,7 +281,7 @@ function MyWork() {
             <li>Git</li>
             <li>Gulp</li>
             <li>Composer</li>
-            <li>Cyprus</li>
+            <li>Cypress</li>
           </ul>
           <ul>
             <li>TailwindCSS</li>
