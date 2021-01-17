@@ -590,6 +590,42 @@ video {
   height: auto;
 }
 
+h1 {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+.article-body ul {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+pre {
+  --bg-opacity: 1;
+  background-color: #2a4365;
+  background-color: rgba(42, 67, 101, var(--bg-opacity));
+  margin: 2rem;
+  padding: 1.25rem;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
 .container {
   width: 100%;
 }
@@ -22378,6 +22414,10 @@ video {
 .animate-bounce {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
+}
+
+.h-cover-banner {
+  height: 400px;
 }
 
 @media (min-width: 640px) {

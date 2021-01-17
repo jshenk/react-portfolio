@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-medium;
+  }
+  h2 {
+    @apply text-2xl font-medium;
+  }
+  h3 {
+    @apply text-xl font-medium;
+  }
+  p {
+    @apply mb-3;
+  }
+  .article-body ul {
+    @apply list-disc ml-5 mb-5;
+  }
+
+  pre {
+    @apply bg-blue-900 m-8 p-5 text-white rounded;
+  }
+}
+
+.h-cover-banner {
+  height: 400px;
+}

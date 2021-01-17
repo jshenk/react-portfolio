@@ -23,6 +23,7 @@ import IconWordpress from "../icons/IconWordpress";
 import IconReact from "../icons/IconReact";
 import IconAward from "../icons/IconAward";
 import Menu from "./Menu";
+import Logo from "./Logo";
 
 function MyWork() {
   const portfolio = [
@@ -268,11 +269,14 @@ function MyWork() {
 
   return (
     <div className="p-6 lg:p-0">
-      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
+      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white flex items-center">
+        <Logo />
         <Menu />
       </div>
       <div className="text-left container mx-auto my-10">
-        <h1 className="mb-4 text-gray-800 text-6xl">Stack</h1>
+        <h1 className="text-center text-3xl font-semibold text-gray-800 md:text-4xl mb-10">
+          Portfolio
+        </h1>
         <div className="bg-gray-200 gap-10 grid grid-cols-2 md:grid-cols-4 p-6 rounded shadow-md">
           <ul>
             <li className="border-b-4 border-yellow-500 inline">React</li>

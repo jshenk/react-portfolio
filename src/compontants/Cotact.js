@@ -2,16 +2,22 @@ import React from "react";
 import Menu from "./Menu";
 import Stanley from "../images/stanley.jpg";
 import { NetlifyForm, Honeypot } from "react-netlify-forms";
+import Logo from "./Logo";
 
 function Contact() {
   return (
     <div>
-      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white">
+      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white flex items-center">
+        <Logo />
         <Menu />
       </div>
       <div className="container mx-auto text-left">
-        <h1 className="mb-4 text-gray-800 text-6xl">Give a Shout</h1>
-        <p className="mb-5 text-xl">My secretary, Stanley, is standing by!</p>
+        <h1 className="text-3xl font-semibold text-gray-800 md:text-4xl mb-4 text-center">
+          Contact Me
+        </h1>
+        <p className="mb-5 text-xl text-center">
+          My secretary, Stanley, is standing by!
+        </p>
       </div>
       <div className="flex container mx-auto mt-10 mb-10 shadow p-10">
         <div className="md:w-1/3 text-left md:pr-10">
