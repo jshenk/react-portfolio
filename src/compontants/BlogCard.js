@@ -7,7 +7,7 @@ function BlogCard(props) {
   return (
     <Link to={`/article/${props.id}`} state={props.id}>
       <div class="mt-6">
-        <div class="max-w-4xl px-10 py-6 bg-white rounded-lg shadow-md">
+        <div class="px-10 py-6 bg-white rounded-lg shadow-md">
           <div class="flex justify-between items-center">
             <span class="font-light text-gray-600"> {date}</span>
           </div>

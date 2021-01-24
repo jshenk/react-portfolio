@@ -1,22 +1,21 @@
 import React from "react";
 import IconDegree from "../icons/IconDegree";
 import IconSchool from "../icons/IconSchool";
+import Banner from "./Banner";
 import Logo from "./Logo";
 import Menu from "./Menu";
 
 function AboutMe() {
   return (
     <div className="p-6 lg:p-0">
-      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white flex items-center">
+      <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
         <Logo />
         <Menu />
       </div>
-      <div className="container mx-auto text-left mt-10">
-        <h1 className="text-center mb-10 text-3xl font-semibold text-gray-800 md:text-4xl">
-          Resume
-        </h1>
+      <Banner title={"Resume"} />
+      <div className="container mx-auto text-left mt-20">
         <div className="text-left text-lg grid lg:grid-cols-3">
-          <div className="mb-10">
+          <div className="mb-20">
             <h2 className="text-xl font-bold mb-5 text-gray-900">Education</h2>
             <div>
               <IconSchool height="25px" width="25px" className="inline mr-3" />
@@ -30,14 +29,14 @@ function AboutMe() {
               </span>
             </div>
           </div>
-          <div className="mb-10">
+          <div className="mb-20">
             <h2 className="text-xl font-bold mb-5 text-gray-900">Learning</h2>
             <ul className="list-disc ml-6">
               <li>React Workshop - Fundimenals to Advanced</li>
               <li>Betamore Frontend Development</li>
             </ul>
           </div>
-          <div className="mb-10">
+          <div className="mb-20">
             <h2 className="text-xl font-bold mb-5 text-gray-900">
               Certifications
             </h2>
@@ -47,7 +46,7 @@ function AboutMe() {
             </ul>
           </div>
         </div>
-        <div className="grid gap-8 md:grid-cols-2 mb-10">
+        <div className="grid gap-8 md:grid-cols-2 mb-20">
           <div className="bg-gray-200 p-5 shadow-md">
             <h2 className="text-gray-700 text-lg uppercase mb-2">Writing</h2>
             <ul className="list-disc ml-6">

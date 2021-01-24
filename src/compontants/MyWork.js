@@ -24,6 +24,7 @@ import IconReact from "../icons/IconReact";
 import IconAward from "../icons/IconAward";
 import Menu from "./Menu";
 import Logo from "./Logo";
+import Banner from "./Banner";
 
 function MyWork() {
   const portfolio = [
@@ -269,14 +270,12 @@ function MyWork() {
 
   return (
     <div className="p-6 lg:p-0">
-      <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white flex items-center">
+      <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
         <Logo />
         <Menu />
       </div>
-      <div className="text-left container mx-auto my-10">
-        <h1 className="text-center text-3xl font-semibold text-gray-800 md:text-4xl mb-10">
-          Portfolio
-        </h1>
+      <Banner title={"Portfolio"} />
+      <div className="text-left container mx-auto my-20">
         <div className="bg-gray-200 gap-10 grid grid-cols-2 md:grid-cols-4 p-6 rounded shadow-md">
           <ul>
             <li className="border-b-4 border-yellow-500 inline">React</li>
@@ -313,12 +312,12 @@ function MyWork() {
           </ul>
         </div>
       </div>
-      <div className="text-left container mx-auto mb-10">
+      <div className="text-left container mx-auto mt-20 mb-10">
         {currentFilter}
         {tagFilter}
-        <div className="mt-10 grid gap-16 lg:grid-cols-3 container mx-auto">
-          {portfolioListing}
-        </div>
+      </div>
+      <div className="mt-10 grid gap-16 lg:grid-cols-3 px-10 pb-20">
+        {portfolioListing}
       </div>
     </div>
   );

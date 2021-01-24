@@ -32,7 +32,7 @@ function Article({
       setData(response.data);
     };
     fetchData();
-  }, []);
+  }, [url]);
   console.log(data);
   return (
     <div className="p-6 lg:p-0">
