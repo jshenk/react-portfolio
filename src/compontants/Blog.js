@@ -16,14 +16,17 @@ function Blog() {
   }, []);
 
   return (
-    <div className="lg:p-0 p-6">
+    <div>
       <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
         <Logo />
         <Menu />
       </div>
       <Banner title={"Blog"} />
 
-      <div className="container mx-auto mt-20  mb-20 text-left">
+      <div className="container mx-auto mt-20  mb-20 text-left px-6 lg:px-0">
+        <div className="text-center bg-green-200 p-2">
+          <h2>Comming Soon!</h2>
+        </div>
         {data.map((item) => (
           <BlogCard
             title={item.Title}

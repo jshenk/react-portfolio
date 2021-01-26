@@ -27,3 +27,7 @@
 .h-cover-banner {
   height: 400px;
 }
+
+.clip-banner {
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
+}

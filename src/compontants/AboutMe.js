@@ -7,13 +7,13 @@ import Menu from "./Menu";
 
 function AboutMe() {
   return (
-    <div className="p-6 lg:p-0">
+    <div>
       <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
         <Logo />
         <Menu />
       </div>
       <Banner title={"Resume"} />
-      <div className="container mx-auto text-left mt-20">
+      <div className="container mx-auto text-left mt-20 p-6 lg:p-0">
         <div className="text-left text-lg grid lg:grid-cols-3">
           <div className="mb-20">
             <h2 className="text-xl font-bold mb-5 text-gray-900">Education</h2>
@@ -124,7 +124,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="pb-10">
+      <div className="pb-10 p-6 lg:p-0">
         <div className="container mx-auto text-gray-800 text-left">
           <div className="row">
             <h3 className="font-bold text-3xl text-gray-900 uppercase">
