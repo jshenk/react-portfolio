@@ -124,7 +124,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="pb-10 p-6 lg:p-0">
+      <div className="pb-10 px-6 lg:px-0">
         <div className="container mx-auto text-gray-800 text-left">
           <div className="row">
             <h3 className="font-bold text-3xl text-gray-900 uppercase">

@@ -316,7 +316,7 @@ function MyWork() {
         {currentFilter}
         {tagFilter}
       </div>
-      <div className="mt-10 grid gap-16 lg:grid-cols-3 px-10 py-20 pb-20 bg-gray-100 p-6 lg:p-0">
+      <div className="mt-10 grid gap-16 lg:grid-cols-3 px-10 py-20 pb-20 bg-gray-100">
         {portfolioListing}
       </div>
     </div>
