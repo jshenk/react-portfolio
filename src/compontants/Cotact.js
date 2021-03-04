@@ -2,13 +2,11 @@ import React from "react";
 import Menu from "./Menu";
 import Stanley from "../images/stanley.jpg";
 import { NetlifyForm, Honeypot } from "react-netlify-forms";
-import Logo from "./Logo";
 
 function Contact() {
   return (
     <div>
       <div className="mb-6 md:p-6 md:bg-gray-800 md:text-white flex items-center">
-        <Logo />
         <Menu />
       </div>
       <div className="container mx-auto text-left">

@@ -16,7 +16,7 @@ p {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .position-center {
     left: 50%;
     top: 50%;

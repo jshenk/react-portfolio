@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BlogCard from "./BlogCard";
 import Menu from "./Menu";
-import Logo from "./Logo";
 import Banner from "./Banner";
 
 function Blog() {
@@ -18,7 +17,6 @@ function Blog() {
   return (
     <div>
       <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
-        <Logo />
         <Menu />
       </div>
       <Banner title={"Blog"} />

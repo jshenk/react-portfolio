@@ -10,7 +10,10 @@ function PortfolioCard(props) {
     );
   });
   return (
-    <div className="rounded overflow-hidden shadow-lg bg-white flex flex-col text-left">
+    <div
+      className="rounded overflow-hidden shadow-lg bg-white flex flex-col text-left"
+      key={props.key}
+    >
       <img className="w-full" src={props.image} alt="test" />
       <div className="w-full font-bold text-2xl text-gray-900 mb-3 px-6 pt-6">
         <a className="hover:underline" href={props.url}>

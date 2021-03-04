@@ -9,7 +9,6 @@ function AboutMe() {
   return (
     <div>
       <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
-        <Logo />
         <Menu />
       </div>
       <Banner title={"Resume"} />
