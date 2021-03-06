@@ -6,7 +6,6 @@ import IconTwitter from "../icons/IconTwitter";
 import IconMail from "../icons/IconMail";
 import Menu from "./Menu";
 import { Link } from "react-router-dom";
-import Logo from "./Logo";
 
 function Home() {
   return (

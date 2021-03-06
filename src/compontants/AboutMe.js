@@ -2,7 +2,6 @@ import React from "react";
 import IconDegree from "../icons/IconDegree";
 import IconSchool from "../icons/IconSchool";
 import Banner from "./Banner";
-import Logo from "./Logo";
 import Menu from "./Menu";
 
 function AboutMe() {
