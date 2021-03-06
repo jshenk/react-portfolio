@@ -16,7 +16,7 @@ function Blog() {
 
   return (
     <div>
-      <div className="md:p-6 md:bg-gray-800 md:text-white flex items-center">
+      <div className="p-6 bg-gray-800 flex items-center">
         <Menu />
       </div>
       <Banner title={"Blog"} />
