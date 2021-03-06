@@ -28,7 +28,7 @@ function Menu(props) {
         </div>
         <div
           className={
-            "lg:flex flex-grow items-center" +
+            "lg:flex flex-grow items-center text-white" +
             (navbarOpen ? " flex flex-wrap" : " hidden")
           }
           id="example-navbar-danger"

@@ -22418,7 +22418,9 @@ pre {
 }
 
 .h-cover-banner {
-  height: 400px;
+  @media only screen and (min-width: 1024px)  {
+    height: 400px;
+  }
 }
 
 .clip-banner {
