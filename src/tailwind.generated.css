@@ -22417,12 +22417,6 @@ pre {
           animation: bounce 1s infinite;
 }
 
-.h-cover-banner {
-  @media only screen and (min-width: 1024px)  {
-    height: 400px;
-  }
-}
-
 .clip-banner {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
