@@ -197,7 +197,7 @@ function MyWork() {
       summary:
         "Built completely with React, utilizing Create React App, React Router, and Tailwind CSS.",
       image: jenna,
-      link: "https://jennashenk.com/",
+      link: "https://jennashenk.me/",
       tags: ["React"],
       id: "18",
     },
