@@ -41,20 +41,6 @@ function Menu(props) {
             <span className="menu-link-hover">Portfolio</span>
           </NavLink>
           <NavLink
-            to="/me"
-            className="uppercase lg:pr-6 w-full lg:w-auto"
-            activeClassName="font-medium"
-          >
-            <span className="menu-link-hover">Resume</span>
-          </NavLink>
-          <NavLink
-            to="/blog"
-            className="uppercase lg:pr-6 w-full lg:w-auto"
-            activeClassName="font-medium"
-          >
-            <span className="menu-link-hover">Blog</span>
-          </NavLink>
-          <NavLink
             to="/contact"
             className="uppercase w-full lg:w-auto"
             activeClassName="font-medium"

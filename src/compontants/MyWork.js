@@ -18,6 +18,8 @@ import sema from "../images/sema.png";
 import cmaa from "../images/cmaa.png";
 import jenna from "../images/jenna.png";
 import bsn from "../images/bsn.png";
+import stock from "../images/stock.png";
+import vinovest from "../images/vinovest.png";
 import IconDrupal from "../icons/IconDrupal";
 import IconWordpress from "../icons/IconWordpress";
 import IconReact from "../icons/IconReact";
@@ -28,13 +30,39 @@ import Banner from "./Banner";
 function MyWork() {
   const portfolio = [
     {
+      title: "Vinovest.co",
+      summary:
+        "Wine investing and trading platform built with React, Next.js, and Tailwind CSS frontend on top of a GO backend.",
+      image: vinovest,
+      link: "https://www.vinovest.co/",
+      tags: ["React", "API"],
+      id: "21",
+    },
+    {
       title: "National Association of Drug Court Professionals",
       summary:
         "Headless Drupal site, with a React frontend. Project provides an interactive cube to find drug court projects to enroll in, based on their risk assesement.",
       image: nadcp,
       link: "",
-      tags: ["Drupal 8", "React", "Future Launch"],
+      tags: ["Drupal 8", "React"],
       id: "10",
+    },
+    {
+      title: "Stock Ticker",
+      summary:
+        "Interactive stock ticker built with React, pulling from Finnhub.io API. Styled with Tailwind CSS.",
+      image: stock,
+      link: "https://stock-ticker.netlify.app/",
+      tags: ["React", "API"],
+      id: "20",
+    },
+    {
+      title: "BSN Sports",
+      summary: "React & Typescript frontend, built on a Symfony backend.",
+      image: bsn,
+      link: "",
+      tags: ["React"],
+      id: "19",
     },
     {
       title: "Hacker News",
@@ -167,19 +195,11 @@ function MyWork() {
     {
       title: "Personal Website",
       summary:
-        "Built completely with React, utilizing Create React App, React Router, and TailwindCSS.",
+        "Built completely with React, utilizing Create React App, React Router, and Tailwind CSS.",
       image: jenna,
       link: "https://jennashenk.com/",
       tags: ["React"],
       id: "18",
-    },
-    {
-      title: "BSN Sports",
-      summary: "React & Typescript frontend, built on a Symfony backend.",
-      image: bsn,
-      link: "",
-      tags: ["React", "Future Launch"],
-      id: "19",
     },
   ];
   const tags = [

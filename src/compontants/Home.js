@@ -27,7 +27,7 @@ function Home() {
             Hello.
           </h1>
           <h2 className="text-2xl mb-4">I'm Jenna Shenk</h2>
-          <span>Frontend Web Developer</span>
+          <span>Frontend Engineer</span>
           <span className="block h-3 w-3 lg:inline-block bg-yellow-500 rounded-full mx-auto lg:mx-3"></span>
           <span>Baltimore, MD</span>
           <div className="pt-10">
