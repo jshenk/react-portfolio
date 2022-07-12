@@ -43,7 +43,7 @@ function MyWork() {
       summary:
         "Headless Drupal site, with a React frontend. Project provides an interactive cube to find drug court projects to enroll in, based on their risk assesement.",
       image: nadcp,
-      link: "",
+      link: "https://ark.nadcp.org/",
       tags: ["Drupal 8", "React"],
       id: "10",
     },
@@ -60,7 +60,7 @@ function MyWork() {
       title: "BSN Sports",
       summary: "React & Typescript frontend, built on a Symfony backend.",
       image: bsn,
-      link: "",
+      link: "https://www.bsnsports.com/",
       tags: ["React"],
       id: "19",
     },
@@ -289,11 +289,11 @@ function MyWork() {
 
   return (
     <div>
-      <div className="p-6 bg-gray-800 md:text-white flex items-center">
+      {/* <div className="p-6 bg-gray-800 md:text-white flex items-center">
         <Menu />
-      </div>
-      <Banner title={"Portfolio"} />
-      <div className="text-left container mx-auto my-20 p-6 lg:p-0">
+      </div> */}
+      {/* <Banner title={"Portfolio"} /> */}
+      {/* <div className="text-left container mx-auto my-20 p-6 lg:p-0">
         <div className="bg-gray-200 gap-10 grid grid-cols-2 md:grid-cols-4 p-6 rounded shadow-md">
           <ul>
             <li className="border-b-4 border-yellow-500 inline">React</li>
@@ -329,7 +329,7 @@ function MyWork() {
             <li>React Router</li>
           </ul>
         </div>
-      </div>
+      </div> */}
       <div className="text-left container mx-auto mt-20 mb-10 p-6 lg:p-0">
         {currentFilter}
         {tagFilter}
