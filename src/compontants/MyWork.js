@@ -24,8 +24,6 @@ import IconDrupal from "../icons/IconDrupal";
 import IconWordpress from "../icons/IconWordpress";
 import IconReact from "../icons/IconReact";
 import IconAward from "../icons/IconAward";
-import Menu from "./Menu";
-import Banner from "./Banner";
 
 function MyWork() {
   const portfolio = [

@@ -4,7 +4,6 @@ import IconGithub from "../icons/IconGithub";
 import IconLinkedin from "../icons/IconLinkedin";
 import IconTwitter from "../icons/IconTwitter";
 import IconMail from "../icons/IconMail";
-import Menu from "./Menu";
 import { Link } from "react-router-dom";
 import MyWork from "./MyWork";
 
